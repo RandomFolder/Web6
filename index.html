@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Что-то 1</title>
+        <link  href="style1.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="registration-form">
+            <h1>Регистрация</h1>
+            <form action="index2.html">
+                <div class="input-field">
+                    <h3>Пользователь</h3>
+                    <input type="text" placeholder="Имя" style="width: calc((100% - 5px)/2);">
+                    <input type="text" placeholder="Фамилия" style="width: calc((100% - 5px)/2);">
+                </div>
+                <div class="input-field">
+                    <h3>Адрес</h3>
+                    <select style="width: calc((100% - 5px)/2);">
+                        <option value="" disabled selected>Выберите город</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Москва</option>
+                        <option>Сочи</option>
+                        <option>Выборг</option>
+                        <option>Екатеринбург</option>
+                    </select>
+                    <input type="text" placeholder="Почтовый индекс" style="width: calc((100% - 5px)/2);">
+                </div>
+                <div class="input-field">
+                    <h3>Контактная информация</h3>
+                    <input type="text" placeholder="Email*" style="width: calc((100% - 5px)/2);">
+                    <input type="text" placeholder="Номер телефона" style="width: calc((100% - 5px)/2);">
+                </div>
+                <div class="input-field">
+                    <h3>Вопросы / комментарии</h3>
+                    <textarea placeholder="Сообщение*"></textarea>
+                </div>
+                <div class="input-field">
+                    <input type="checkbox" name="update" style="padding-top: 0%;">
+                    <label for="update">Присылать оповещения на электронную почту</label>                    
+                </div>
+                <div class="button">
+                    <p><input type="submit" value="Далее"><input type="reset"></p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
