@@ -9,8 +9,8 @@
             <form action="index2.html">
                 <div class="input-field">
                     <h3>Пользователь</h3>
-                    <input type="text" placeholder="Имя" style="width: calc((100% - 5px)/2);">
-                    <input type="text" placeholder="Фамилия" style="width: calc((100% - 5px)/2);">
+                    <input type="text" placeholder="Имя" style="width: calc((100% - 5px)/2);" pattern="^[А-Я]+[а-я]*$" required>
+                    <input type="text" placeholder="Фамилия" style="width: calc((100% - 5px)/2);" pattern="^[А-Я]+[а-я]*$" required>
                 </div>
                 <div class="input-field">
                     <h3>Адрес</h3>
@@ -22,12 +22,12 @@
                         <option>Выборг</option>
                         <option>Екатеринбург</option>
                     </select>
-                    <input type="text" placeholder="Почтовый индекс" style="width: calc((100% - 5px)/2);">
+                    <input type="text" placeholder="Почтовый индекс" style="width: calc((100% - 5px)/2);" pattern="\d{6}" required>
                 </div>
                 <div class="input-field">
                     <h3>Контактная информация</h3>
-                    <input type="text" placeholder="Email*" style="width: calc((100% - 5px)/2);">
-                    <input type="text" placeholder="Номер телефона" style="width: calc((100% - 5px)/2);">
+                    <input type="email" placeholder="Email*" style="width: calc((100% - 5px)/2);">
+                    <input type="text" placeholder="Номер телефона (xxxx-xxx-xxxx)" style="width: calc((100% - 5px)/2);" pattern="\d{4}-\d{3}-\d{4}" required>
                 </div>
                 <div class="input-field">
                     <h3>Вопросы / комментарии</h3>
